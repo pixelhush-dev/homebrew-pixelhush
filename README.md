@@ -1,10 +1,12 @@
 # PixelHush Homebrew Tap
 
 ```bash
-brew install --cask pixelhush-dev/pixelhush/pixelhush
+curl -fsSL https://pixelhush.dev/install.sh | bash
 ```
 
-Or tap first:
+This installer uses Homebrew under the hood and repairs stale PixelHush cask registrations if the app was deleted manually.
+
+Manual Homebrew install:
 
 ```bash
 brew tap pixelhush-dev/pixelhush
