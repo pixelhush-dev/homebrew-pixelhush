@@ -1,6 +1,6 @@
 cask "pixelhush" do
-  version "1.5.0"
-  sha256 "67212cc5d5e28930bb8c4af4e0cdbe4f7082c879f92fe88bb8171879a047b95d"
+  version "1.5.1"
+  sha256 "c918790b1fdd1b4bffce2cc9e7235faa5b8b4355f976d28abcbf7cd20ba513bc"
 
   url "https://pixelhush.dev/releases/PixelHush-#{version}.dmg"
   name "PixelHush"
