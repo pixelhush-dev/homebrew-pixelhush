@@ -4,7 +4,7 @@
 curl -fsSL https://pixelhush.dev/install.sh | bash
 ```
 
-This installer uses Homebrew under the hood and repairs stale PixelHush cask registrations if the app was deleted manually.
+This installer downloads the latest PixelHush DMG directly and installs `PixelHush.app` into `/Applications`.
 
 Manual Homebrew install:
 
