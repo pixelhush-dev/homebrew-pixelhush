@@ -1,6 +1,6 @@
 cask "pixelhush" do
-  version "1.5.6"
-  sha256 "d22ae40918e86f2660f3248bcb24335e00a448a9810e6e8da7dc1416a8225072"
+  version "1.5.7"
+  sha256 "03bd1a228642d2b124479ce19cc8b4275031ec9021f3498e7359dcaf2dfa522c"
 
   url "https://pixelhush.dev/releases/PixelHush-#{version}.dmg"
   name "PixelHush"
@@ -12,6 +12,10 @@ cask "pixelhush" do
   postflight do
     system_command "/usr/bin/xattr",
                    args: ["-r", "-d", "com.apple.quarantine", "#{appdir}/PixelHush.app"],
+                   sudo: false
+
+    system_command "/usr/bin/open",
+                   args: ["#{appdir}/PixelHush.app"],
                    sudo: false
   end
 
